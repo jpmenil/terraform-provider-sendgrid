@@ -28,6 +28,7 @@ func Provider() *schema.Provider {
 		ResourcesMap: map[string]*schema.Resource{
 			"sendgrid_subuser": resourceSubuser(),
 			"sendgrid_api_key": resourceAPIKey(),
+                        "sendgrid_template": resourceTemplate(),
 		},
 	}
 
